@@ -1,0 +1,217 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* --- App Layout & General Styling --- */
+.App {
+  text-align: left;
+}
+
+.App-header {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+.App-header h1 {
+  margin: 0;
+}
+
+/* --- Uploader Component --- */
+.uploader-container {
+  border: 2px dashed #ccc;
+  padding: 2rem;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.upload-controls {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.upload-message {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #333;
+}
+
+/* --- Results & Review Page --- */
+.results-container, .review-container {
+  margin-top: 2rem;
+  padding: 2rem;
+  border: 1px solid #eee;
+  border-radius: 8px;
+}
+
+h2 {
+  border-bottom: 2px solid #eee;
+  padding-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.processed-section, .failed-section, .failed-files-section {
+  margin-top: 1.5rem;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 4px;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+/* --- Transactions Table --- */
+.transactions-table {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.table-header, .table-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 2fr 0.5fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-header {
+  font-weight: bold;
+}
+
+.table-row input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.description-cell {
+  text-align: left;
+}
+.description-cell p {
+  margin: 0;
+}
+.description-cell small {
+  color: #777;
+}
+
+.delete-btn, .save-btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.save-button-container {
+  margin-top: 2rem;
+  text-align: right;
+}
+
+.save-btn {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1.1rem;
+}
+
+/* --- Report Page --- */
+.report-container {
+  text-align: left;
+}
+
+.report-summary {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  align-items: flex-start;
+}
+
+.total-expense {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.total-expense h3 {
+  margin-top: 0;
+}
+
+.total-expense p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #4CAF50;
+  margin: 0;
+}
+
+.category-chart {
+  flex: 1;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.report-container .transactions-table {
+  margin-top: 2rem;
+}
+
+.report-row {
+  grid-template-columns: 1fr 1fr 1fr 2.5fr; /* Adjust for no action button */
+}
+
+.report-actions {
+  margin-top: 2rem;
+  text-align: center;
+}
